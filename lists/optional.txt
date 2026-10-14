@@ -1,0 +1,18 @@
+# optional.txt
+# Purpose: tracking-adjacent domains where blocking is a judgment call. Each entry has a
+# comment describing the tradeoff. Review before enabling; unlike trackers.txt, some of
+# these can change app/site behavior.
+# Format: plain domains (Pi-hole v6 compatible).
+# Generated: 2026-10-14
+
+telemetry.copilotkit.ai # dev tool telemetry; can be disabled via env var instead of DNS
+clientstream.launchdarkly.com # feature-flag streaming; blocking can silently freeze app feature flags
+mobile.launchdarkly.com # feature-flag SDK; blocking may change app behavior, not just telemetry
+clientstream-ga.launchdarkly.com # feature-flag streaming (GA variant); same caveat
+lfx-segment.platform.linuxfoundation.org # first-party site analytics; low value to block
+proxy.telemetry.us-ashburn-1.oci.oraclecloud.com # cloud SDK telemetry; blocking loses SDK diagnostics
+clckstm-prod-west-b.aws-cof-eppt-core-pub-prd-waf-uw2.capitalonegslbex.com # banking app clickstream; unverifiable side effects on a financial app
+clckstm-prod-east-p.aws-cof-eppt-core-pub-prd-waf-ue1.capitalonegslbex.com # banking app clickstream (second region); same caveat
+braze-images.com # marketing CDN; blocking removes images from marketing emails/push content
+pdclog-us.eufylife.com # robot vacuum diagnostic uploads; may impair vendor support diagnostics
+ab.chatgpt.com # A/B experiment assignment; blocking may alter or degrade app behavior

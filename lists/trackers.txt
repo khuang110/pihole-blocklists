@@ -1,0 +1,16 @@
+# trackers.txt
+# Purpose: tracker, attribution, and telemetry domains observed as allowed-but-unnecessary
+# on a real network. Every entry was verified to have no functional dependency before listing.
+# Format: plain domains (Pi-hole v6 compatible; also works with AdGuard Home, dnsmasq-based
+# filters, and any DNS blocker that accepts one-domain-per-line lists).
+# Generated: 2026-10-14
+
+engagements.appsflyer.com # attribution
+cmp.inmobi.com # ads
+choice.inmobi.com # ads
+config.sdk.kochava.com # attribution
+restricted.sdk.kochava.com # attribution
+analytics.tiktok.net # analytics
+freshpaint-impression.com # analytics
+tracking.aws.judge.me # analytics
+sur.telemetry.intel.com # telemetry
