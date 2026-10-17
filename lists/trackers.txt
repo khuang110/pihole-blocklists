@@ -14,3 +14,4 @@ analytics.tiktok.net # analytics
 freshpaint-impression.com # analytics
 tracking.aws.judge.me # analytics
 sur.telemetry.intel.com # telemetry
+pdclog-us.eufylife.com # robovac diagnostics upload
